@@ -80,7 +80,8 @@ func main() {
 	parts := ParseURLs("/hello/:name/*any")
 	t := new()
 	t.insert(parts)
-	test := ParseURLs("/hello/test/")
+	// test := ParseURLs("/hello/test/")
+	test := ParseURLs("/hello/test/newbee")
 	tnode := t.searchPrefix(test)
 
 	// 获得动态匹配的数据映射
